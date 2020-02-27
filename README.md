@@ -4,20 +4,19 @@
 
 ```javascript
 import React from "react";
-import applyPatterns from "../../lib/applyPatterns";
+import applyPatterns, { JUST_NUMBERS } from "check-input-patterns";
 import { toString } from "../../util/util";
-import "./styles.scss";
 
 const Input = ({
   type = "text",
   value,
-  patterns = [],
+  patterns = [JUST_NUMBERS],
   className = "",
   ...rest
 }) => {
   return (
     <input
-      className={`input ${className}`}
+      className={`my-class ${className}`}
       value={applyPatterns(toString(value), patterns)}
       type={type}
       {...rest}
