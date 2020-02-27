@@ -1,0 +1,19 @@
+{
+  "name": "check-input-patterns",
+  "version": "1.0.0",
+  "description": "Used to check inputed values with regexp, compatible with react",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/francajosejunior/input-patterns.git"
+  },
+  "author": "Joseé Joaquim Júnior (https://github.com/francajosejunior)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/francajosejunior/input-patterns/issues"
+  },
+  "homepage": "https://github.com/francajosejunior/input-patterns#readme",
+  "dependencies": {
+    "lodash": "^4.17.15"
+  }
+}
