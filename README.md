@@ -4,13 +4,13 @@
 
 ```javascript
 import React from "react";
-import applyPatterns, { JUST_NUMBERS } from "check-input-patterns";
+import applyPatterns from "check-input-patterns";
 import { toString } from "../../util/util";
 
 const Input = ({
   type = "text",
   value,
-  patterns = [JUST_NUMBERS],
+  patterns = [],
   className = "",
   ...rest
 }) => {
@@ -24,4 +24,14 @@ const Input = ({
   );
 };
 export default Input;
+```
+
+```javascript
+import React from "react";
+import { NO_SPECIAL, NO_MATHEMATIC } from "check-input-patterns";
+
+...
+  <Input patterns={[NO_SPECIAL, NO_MATHEMATIC]} />
+...
+
 ```
