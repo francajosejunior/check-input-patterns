@@ -2,7 +2,7 @@
   "name": "check-input-patterns",
   "version": "2.0.0",
   "description": "Used to check inputed values with regexp, compatible with react",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/francajosejunior/input-patterns.git"
