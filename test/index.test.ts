@@ -1,9 +1,5 @@
-import applyPatterns, {
-  JUST_NUMBERS,
-  NO_NUMBERS,
-  NO_SPACE,
-  NO_SPECIAL,
-} from "../src/index";
+import applyPatterns, { JUST_NUMBERS, NO_NUMBERS, NO_SPACE, NO_SPECIAL } from "../src";
+
 describe("applyPatterns", () => {
   it("should remove numbers", () => {
     const initValue = "Test4Test";
