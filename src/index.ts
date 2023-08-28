@@ -1,5 +1,3 @@
-import _ from "lodash";
-
 export const NO_NUMBERS = /\d/g;
 export const JUST_NUMBERS = /\D/g;
 export const NUMBERS_AND_COMMA = /[^\d,]/g;
@@ -29,9 +27,10 @@ export const COMMUN_TEXT = [
   NO_MULTIPLE_SPACE
 ];
 
-export const applyPatterns = (value, patterns) => {
-  let normalPatterns = [];
-  if (_.isArray(patterns)) {
+export const applyPatterns = (value: string, patterns: RegExp | RegExp[]) => {
+  let normalPatterns: RegExp[] = [];
+  
+  if (Array.isArray(patterns)) {
     normalPatterns = [...patterns];
   } else if (patterns) {
     normalPatterns = [patterns];
